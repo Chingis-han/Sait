@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Python</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Learn Python Programming</h1>
+        <p>Master the basics and become a Python expert!</p>
+    </header>
+
+    <nav>
+        <button onclick="showSection('introduction')">Introduction</button>
+        <button onclick="showSection('syntax')">Syntax</button>
+        <button onclick="showSection('examples')">Examples</button>
+        <button onclick="showSection('quiz')">Quiz</button>
+    </nav>
+
+    <section id="introduction" class="content-section">
+        <h2>Introduction to Python</h2>
+        <p>Python is a powerful, versatile, and easy-to-learn programming language. It is widely used in web development, data science, artificial intelligence, and much more!</p>
+    </section>
+
+    <section id="syntax" class="content-section">
+        <h2>Basic Syntax</h2>
+        <p>Here is an example of a basic Python program:</p>
+        <pre><code>
+# This is a comment
+print("Hello, World!")
+        </code></pre>
+        <p>In Python, indentation is used to define code blocks, making the code more readable.</p>
+    </section>
+
+    <section id="examples" class="content-section">
+        <h2>Examples</h2>
+        <p>Try clicking on the buttons below to see different Python examples:</p>
+        <button onclick="showExample('greeting')">Greeting</button>
+        <button onclick="showExample('math')">Math Operations</button>
+        <button onclick="showExample('conditionals')">Conditionals</button>
+        <pre id="example-output"><code></code></pre>
+    </section>
+
+    <section id="quiz" class="content-section">
+        <h2>Quick Quiz</h2>
+        <p>What will be the output of this code?</p>
+        <pre><code>
+x = 5
+y = 10
+if x < y:
+    print("x is less than y")
+        </code></pre>
+        <button onclick="showAnswer()">Show Answer</button>
+        <p id="answer"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Learn Python. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
